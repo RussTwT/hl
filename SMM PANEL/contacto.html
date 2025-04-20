@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMM Panel - Contáctenos</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Estilo para la sección de contacto */
+      #contacto {
+        padding: 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .contact-info,
+      .contact-form {
+        background: rgba(0, 0, 0, 0.8); /* Fondo negro transparente */
+        color: #fff; /* Texto blanco */
+        padding: 20px;
+        border-radius: 10px; /* Esquinas redondeadas pequeñas */
+        margin-bottom: 20px;
+      }
+
+      .contact-info ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .contact-info li {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+
+      .contact-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 0.9em;
+      }
+
+      .contact-form textarea {
+        resize: none;
+        height: 100px;
+      }
+
+      .contact-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        cursor: pointer;
+      }
+
+      .contact-form button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contacto">
+        <h2>Contáctenos</h2>
+        <p>
+          Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos:
+        </p>
+        <div class="contact-info">
+          <ul>
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:soporte@smm-panel.com">Kaidelmd@gmail.com</a>
+            </li>
+            <li><strong>Teléfono:</strong> +51 929811989</li>
+          </ul>
+        </div>
+
+        <div class="contact-form">
+          <h3>Envíanos un mensaje</h3>
+          <form action="#" method="post">
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Tu nombre"
+              required
+            />
+
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Tu correo electrónico"
+              required
+            />
+
+            <label for="message">Mensaje:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Escribe tu mensaje aquí..."
+              required
+            ></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 SMM Panel. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

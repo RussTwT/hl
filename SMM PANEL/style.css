@@ -1,0 +1,221 @@
+/* Fondo con degradado negro desde el encabezado */
+body {
+    margin: 0;
+    font-family: 'Poetsen One', sans-serif;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), 
+                url('Materials/Fondo.gif') no-repeat center center fixed; /* Degradado negro sobre el fondo */
+    background-size: cover; /* Ajusta el fondo para cubrir toda la pantalla */
+    color: #fff; /* Color de texto blanco */
+    text-align: center; /* Centra el texto */
+    overflow: hidden; /* Evita el desplazamiento */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex; /* Flexbox para centrar el contenido */
+    flex-direction: column; /* Cambia a columna para centrar el contenido */
+    transform-origin: top left; /* Punto de referencia para escalar */
+    transform: scale(calc(100vw / 1920)); /* Escala según el ancho de la ventana */
+}
+
+/* Mantén el resto del estilo igual */
+header {
+    padding: 20px 0; /* Espaciado interno */
+    position: fixed; /* Fija el header en la parte superior */
+    top: 0; /* Parte superior de la ventana */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    box-shadow: none; /* Eliminamos cualquier sombra */
+}
+
+header nav {
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+header nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0; /* Quita el margen */
+    padding: 0; /* Quita el padding */
+    display: flex; /* Flexbox para alinear los elementos */
+    gap: 20px; /* Espaciado entre los elementos de la lista */
+}
+
+header nav ul li {
+    margin: 0; /* Quita el margen */
+}
+
+header nav ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    font-family: 'Poetsen One', sans-serif; /* Fuente personalizada */
+    color: #fff; /* Color blanco */
+    padding: 10px 20px; /* Espacio interno */
+    background-color: rgba(0, 255, 153, 0.8); /* Color verdoso */
+    border-radius: 8px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave para el color y el efecto hover */
+}
+
+header nav ul li a:hover { 
+    background-color: rgba(0, 204, 128, 1); /* Color verdoso permanente */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Hero Section */
+#hero {
+    display: flex; /* Flexbox para centrar el contenido */
+    flex-direction: column; /* Cambia a columna para centrar el contenido */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido */
+    height: 35vh; /* Altura del hero */
+    text-align: center; /* Centra el texto */
+}
+
+#hero h1 {
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra de texto */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color y la sombra */
+}
+
+#hero h1:hover {
+    color: #00ff99; /* Color verde al pasar el mouse */
+    text-shadow: 0 0 15px #00ff99; /* Sombra verde al pasar el mouse */
+}
+
+#hero p {
+    font-size: 1.0rem; /* Tamaño de fuente más grande */
+    margin: 10px 0; /* Espacio entre párrafos */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+#hero a.btn {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    padding: 15px 30px; /* Más espacio interno */
+    background-color: rgba(0, 204, 128, 1); /* Color verdoso permanente */
+    color: #fff; /* Texto blanco */
+    text-decoration: none; /* Quita el subrayado */
+    border-radius: 10px; /* Esquinas redondeadas */
+    display: inline-block; /* Ajusta el tamaño del fondo al contenido */
+    box-shadow: none; /* Eliminamos cualquier sombra */
+    margin: 1px 0; /* Espaciado entre los textos superior e inferior */
+    transition: transform 0.3s ease; /* Transición para el efecto hover */
+    position: relative; /* Permite mover el botón */
+    top: 30px; /* Ajusta la posición vertical (positivo hacia abajo, negativo hacia arriba) */
+    left: 0; /* Ajusta la posición horizontal (positivo hacia la derecha, negativo hacia la izquierda) */
+}
+
+#hero a.btn:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+/* Servicios Section */
+servicios {
+    text-align: center; /* Centra el texto */
+    padding: 50px 20px; /* Espaciado interno */
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: center; /* Centra las columnas */
+    gap: 20px; /* Espaciado entre columnas reducido */
+}
+
+.servicio-columna {
+    flex: 1;  /* Cada columna ocupa el mismo espacio */
+    max-width: 600px; /* Limita el ancho de las columnas */
+}
+
+.servicio { 
+    background-color: rgba(0, 0, 0, 0.7);   
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Espacio entre servicios */  
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: none; /* Eliminamos cualquier sombra */
+}
+
+.servicio:hover {           
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: none; /* Eliminamos cualquier sombra */
+}
+
+.servicio h3 {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    margin-bottom: 10px; /* Espacio entre el título y el texto */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+}
+
+.servicio p {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+    line-height: 1.5; /* Espaciado entre líneas */
+}
+
+#servicios .servicio {
+    margin: 10px 0; /* Espacio entre servicios */
+}
+
+#servicios .servicio h3 {
+    font-size: 1.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold;  
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color y la sombra */
+}
+
+#servicios .servicio h3:hover {
+    color: #00ccff; /* Color azul al pasar el mouse */
+    text-shadow: 0 0 10px #00ccff; /* Sombra azul al pasar el mouse */
+}
+
+#servicios .servicio p {
+    font-size: 1rem; /* Tamaño de fuente más pequeño */
+    margin: 5px 0; /* Espacio entre párrafos */
+}
+
+/* Estilo para el enlace de contacto */
+#contacto a {
+    color: #fff; /* Cambia el color inicial a blanco */
+    text-decoration: none; /* Quita el subrayado */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Transición suave para el color y el brillo */
+}
+
+#contacto a:hover {
+    color: #00ff99; /* Cambia el color a verde al pasar el mouse */
+    text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99; /* Agrega un brillo verde */
+}
+
+/* Íconos sociales */
+.social-icons img {
+    width: 60px;  /* Ancho de los íconos */
+    height: 60px; /* Alto de los íconos */
+    margin: 0 5px; /* Espacio entre íconos */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave para el efecto hover */
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Efecto de agrandamiento al pasar el mouse */
+    filter: drop-shadow(0 0 10px #00ff99) drop-shadow(0 0 20px #00ff99); /* Sombra verde al pasar el mouse */
+}
+
+/* Fondo para resaltar texto */
+#hero h1, #hero p, #servicios h2, #servicios .servicio h3, #servicios .servicio p, #contacto p {
+    padding: 10px 15px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas */
+    display: inline-block; /* Ajusta el tamaño del fondo al contenido */
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+/* Fondo negro con esquinas redondeadas para los elementos marcados */
+#hero h1, 
+#hero p, 
+#servicios h2, 
+#contacto p {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro semitransparente */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 10px 15px; /* Espaciado interno */
+    display: inline-block; /* Ajusta el tamaño del fondo al contenido */
+    margin: 10px 0; /* Espaciado entre elementos */
+}
+
+/* Agregar margen superior al contenido principal */
+main {
+    margin-top: 80px; /* Ajusta el valor según el tamaño de tu barra de navegación */
+}
+
